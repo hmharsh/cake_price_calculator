@@ -12,7 +12,10 @@
     Measurement unit: <span id="unit"></span> <br/> <br/>
     Price per unit in ₹: <span id="price"></span> <br/> <br/>
     Brand: <span id="brand"></span> <br/> <br/>
-    Comments: <span id="comment"></span> <br/> <br/>
+    Comments: <span id="comment"></span> <br/> <br/> 
+    <hr/>
+    Quantity required: <input type="number" step="0.01" id="quantity"> <br/><br/>
+    <button type="button">Add</button>
 </div>
 
 <script>
@@ -39,6 +42,8 @@
     // On select change
     document.getElementById('selectIng').addEventListener('change', function() {
     document.getElementById("ingredientDetails").style.display='block';
+    document.getElementById("quantity").value = "";
+
     for(var i = 0; i < itemDetails.length; i++) {
         if (this.value == itemDetails[i].name) {
             document.getElementById("name").innerHTML = itemDetails[i].name;
