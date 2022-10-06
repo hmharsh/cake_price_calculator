@@ -1,0 +1,55 @@
+<html>
+<head><title>Price calculator</title></head>
+<script src="itemDetails.js"></script>
+<body>
+<h1>Cake Price Calculator</h1>
+<select id="selectIng">
+    <option>Choose a ingredient</option>
+</select>
+<hr/>
+<div id="ingredientDetails">
+    Ingredient Name: <span id="name"></span> <br/> <br/> 
+    Measurement unit: <span id="unit"></span> <br/> <br/>
+    Price per unit in ₹: <span id="price"></span> <br/> <br/>
+    Brand: <span id="brand"></span> <br/> <br/>
+    Comments: <span id="comment"></span> <br/> <br/>
+</div>
+
+<script>
+    // On load
+    window.onload = function() {
+    document.getElementById("ingredientDetails").style.display='none';
+    document.getElementById("name").innerHTML = "";
+    document.getElementById("unit").innerHTML = "";
+    document.getElementById("price").innerHTML = "";
+    document.getElementById("brand").innerHTML = "";
+    document.getElementById("comment").innerHTML = "";
+    };
+
+    // Get drop down populated with ingredient name
+    var select = document.getElementById("selectIng");
+    for(var i = 0; i < itemDetails.length; i++) {
+        var opt = itemDetails[i].name;
+        var el = document.createElement("option");
+        el.textContent = opt;
+        el.value = opt;
+        select.appendChild(el);
+    }
+
+    // On select change
+    document.getElementById('selectIng').addEventListener('change', function() {
+    document.getElementById("ingredientDetails").style.display='block';
+    for(var i = 0; i < itemDetails.length; i++) {
+        if (this.value == itemDetails[i].name) {
+            document.getElementById("name").innerHTML = itemDetails[i].name;
+            document.getElementById("unit").innerHTML = itemDetails[i].unit;
+            document.getElementById("price").innerHTML = itemDetails[i].price;
+            document.getElementById("brand").innerHTML = itemDetails[i].brand;
+            document.getElementById("comment").innerHTML = itemDetails[i].comment;
+        }
+    }
+    });
+
+</script>
+</body>
+</html>
