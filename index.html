@@ -15,11 +15,14 @@
     Comments: <span id="comment"></span> <br/> <br/> 
     <hr/>
     Quantity required: <input type="number" step="0.01" id="quantity"> <br/><br/>
-    <button type="button">Add</button>
+    <button type="button"  onclick="addIngredient()">Add</button><br/><br/>
+    Total Price: <span id="totalPrice"></span><br/><br/>
 </div>
 
 <script>
     // On load
+    var Result = []
+    var totalPrice=0
     window.onload = function() {
     document.getElementById("ingredientDetails").style.display='none';
     document.getElementById("name").innerHTML = "";
@@ -27,6 +30,7 @@
     document.getElementById("price").innerHTML = "";
     document.getElementById("brand").innerHTML = "";
     document.getElementById("comment").innerHTML = "";
+    document.getElementById("totalPrice").innerHTML = totalPrice;
     };
 
     // Get drop down populated with ingredient name
@@ -43,17 +47,27 @@
     document.getElementById('selectIng').addEventListener('change', function() {
     document.getElementById("ingredientDetails").style.display='block';
     document.getElementById("quantity").value = "";
-
     for(var i = 0; i < itemDetails.length; i++) {
         if (this.value == itemDetails[i].name) {
             document.getElementById("name").innerHTML = itemDetails[i].name;
             document.getElementById("unit").innerHTML = itemDetails[i].unit;
             document.getElementById("price").innerHTML = itemDetails[i].price;
             document.getElementById("brand").innerHTML = itemDetails[i].brand;
-            document.getElementById("comment").innerHTML = itemDetails[i].comment;
+            document.getElementById("totalPrice").innerHTML = parseFloat(document.getElementById('totalPrice').innerHTML) + parseFloat(document.getElementById('price').innerHTML);
         }
     }
     });
+
+    
+    function addIngredient(){
+        Result.push(
+            {
+                "name": document.getElementById("name").innerHTML,
+                "price": parseFloat(document.getElementById('price').innerHTML)*document.getElementById("quantity").value
+            }
+        )
+        console.table(Result)
+    }
 
 </script>
 </body>
