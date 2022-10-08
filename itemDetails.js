@@ -15,13 +15,6 @@ var itemDetails =
             "comment": ""
         },
         {
-            "name": "Brown sugar",
-            "unit": "gram",
-            "price": ".1",
-            "brand": "mawana",
-            "comment": ""
-        },
-        {
             "name": "wheat flour",
             "unit": "gram",
             "price": ".062",

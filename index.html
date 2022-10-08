@@ -53,19 +53,19 @@
             document.getElementById("unit").innerHTML = itemDetails[i].unit;
             document.getElementById("price").innerHTML = itemDetails[i].price;
             document.getElementById("brand").innerHTML = itemDetails[i].brand;
-            document.getElementById("totalPrice").innerHTML = parseFloat(document.getElementById('totalPrice').innerHTML) + parseFloat(document.getElementById('price').innerHTML);
         }
     }
     });
 
-    
+    // On add button click
     function addIngredient(){
         Result.push(
             {
                 "name": document.getElementById("name").innerHTML,
                 "price": parseFloat(document.getElementById('price').innerHTML)*document.getElementById("quantity").value
-            }
+            }  
         )
+        document.getElementById("totalPrice").innerHTML = parseFloat(document.getElementById('totalPrice').innerHTML)  + (parseFloat(document.getElementById('price').innerHTML)*parseFloat(document.getElementById("quantity").value));
         console.table(Result)
     }
 
