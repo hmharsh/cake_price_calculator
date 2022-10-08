@@ -30,7 +30,7 @@ var itemDetails =
         },
         {
             "name": "flavourless oil",
-            "unit": "gram",
+            "unit": "ml",
             "price": ".155",
             "brand": "fortune soya",
             "comment": ""
