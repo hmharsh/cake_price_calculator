@@ -14,3 +14,6 @@ body {
   span {
       font-weight: bold;
   }
+  table, th, td {
+    border: 1px solid;
+  }
