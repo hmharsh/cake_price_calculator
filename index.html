@@ -16,7 +16,8 @@
     Measurement unit: <span id="unit"></span> <br/> <br/>
     Price per unit in ₹: <input type="number" step="0.01" id="price"><br/> <br/>
     Brand: <span id="brand"></span> <br/> <br/>
-    Comments: <span id="comment"></span> <br/> <br/> 
+    Comments: <span id="comment"></span> <br/> <br/>
+    Seller: <span id="seller"></span> <br/> <br/> 
     <hr/>
     Ingredient quantity in <label id="perUnit"> </label>: <input type="number" step="0.01" onkeyup="changeQuantity(this.value)" id="quantity"> <br/><br/>
     Price of Ingredient in ₹: <span id="ingredientPrice"></span> <br/> <br/>
@@ -29,7 +30,7 @@
         </table>
     </div>
     <br/>
-    Total Price: <span id="totalPrice"></span><br/><br/>
+    Total Price: <span id="totalPrice"></span> + <input type="number" placeholder="Profit percentage" step="0.01" onkeyup="refreshProfitedPrice()" id="profitInput"></input> = <span id="finalPrice"></span><br/><br/>
 </div>
 
 <script>
@@ -45,6 +46,7 @@
     document.getElementById("price").value = 0
     document.getElementById("brand").innerHTML = "";
     document.getElementById("comment").innerHTML = "";
+    document.getElementById("seller").innerHTML = "";
     document.getElementById("totalPrice").innerHTML = totalPrice;
     };
 
@@ -69,6 +71,8 @@
             document.getElementById("perUnit").innerHTML = itemDetails[i].unit;
             document.getElementById("price").value = parseFloat(itemDetails[i].price);
             document.getElementById("brand").innerHTML = itemDetails[i].brand;
+            document.getElementById("comment").innerHTML = itemDetails[i].comment;
+            document.getElementById("seller").innerHTML = itemDetails[i].seller;
         }
     }
     document.getElementById("ingredientPrice").innerHTML=0
@@ -77,8 +81,12 @@
 
     // On change in Quantity
     function changeQuantity(newQuantity){
-        document.getElementById("price").disabled = true
-        document.getElementById("ingredientPrice").innerHTML = (parseFloat(document.getElementById('price').value)*parseFloat(document.getElementById("quantity").value))
+        if (newQuantity == "") {
+            document.getElementById("ingredientPrice").innerHTML = 0
+        } else {
+          document.getElementById("price").disabled = true
+          document.getElementById("ingredientPrice").innerHTML = (parseFloat(document.getElementById('price').value)*parseFloat(document.getElementById("quantity").value))
+        }
     }
 
     // On add button click
@@ -92,6 +100,7 @@
         document.getElementById("totalPrice").innerHTML = parseFloat(document.getElementById('totalPrice').innerHTML)  + parseFloat(document.getElementById("ingredientPrice").innerHTML);
         refreshTable(Result)
         document.getElementById("ingredientTableDiv").style.display='block';
+        refreshProfitedPrice()
     }
 
     // Refresh the table
@@ -117,6 +126,13 @@
            tr.appendChild(td2);
            table.appendChild(tr);
         }
+    }
+
+    // On profit value change
+    function refreshProfitedPrice() {
+        newProfitPercentage = document.getElementById("profitInput").value
+            totalPriceVal=parseFloat(document.getElementById("totalPrice").innerHTML)
+            document.getElementById("finalPrice").innerHTML = totalPriceVal + (totalPriceVal * parseFloat(newProfitPercentage) /100)
     }
 
 </script>

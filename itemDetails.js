@@ -5,6 +5,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".049",
             "brand": "Gangwal",
+            "seller": "",
             "comment": ""
         },
         {
@@ -12,6 +13,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".049",
             "brand": "Gangwal",
+            "seller": "",
             "comment": ""
         },
         {
@@ -19,6 +21,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".062",
             "brand": "Ashirwad",
+            "seller": "",
             "comment": ""
         },
         {
@@ -26,13 +29,15 @@ var itemDetails =
             "unit": "gram",
             "price": ".15",
             "brand": "Pro nature organic",
-            "comment": ""
+            "seller": "test seller value",
+            "comment": "test comment value"
         },
         {
             "name": "flavourless oil",
             "unit": "ml",
             "price": ".155",
             "brand": "Fortune soya",
+            "seller": "",
             "comment": ""
         },
         {
@@ -40,6 +45,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".1",
             "brand": "Mawana",
+            "seller": "",
             "comment": ""
         }
 
