@@ -125,7 +125,8 @@
 
    // Remove supplied ingredient from the Result array based on supplied ingredient name
    function removeIngredientFromArr(ingredientName){
-       for(i=0;i<=Result.length;i++){
+       for(i=0;i<Result.length;i++){
+
            if(ingredientName==Result[i].name){
                Result.splice(i, 1);
            }
@@ -144,12 +145,13 @@
    }
   
    // On Save button click
-   function create_file(){
+   function createFile(){
     let recipeName = prompt('Enter recipe name');
-    download_file(recipeName+".json", JSON.stringify(Result))
+    downloadFile(recipeName+".json", JSON.stringify(Result))
    }
-
-   function download_file(name, contents, mime_type) {
+   
+   // Download supplied content in form of a file
+   function downloadFile(name, contents, mime_type) {
     mime_type = mime_type || "application/json";
     var blob = new Blob([contents], {type: mime_type});
     var dlink = document.createElement('a');
@@ -166,3 +168,26 @@
     dlink.click();
     dlink.remove();
    }
+
+  // JSON recipe file upload logic
+  function onChange(event) {
+    var reader = new FileReader();
+    reader.onload = onReaderLoad;
+    reader.readAsText(event.target.files[0]);
+  }
+  document.getElementById('file').addEventListener('change', onChange); 
+
+  // On upload of new recipe
+  function onReaderLoad(event){
+    try {
+       Result = JSON.parse(event.target.result);
+    } catch(e) {
+        alert("Upload a valid recipe file, error:"+e); // error in the above string (in this case, yes)!
+    }
+       refreshTable(Result)
+       refreshPrice()
+       refreshProfitedPrice()
+       document.getElementById("ingredientTableDiv").style.display='block';
+       document.getElementById("ingredientDetails").style.display='block';
+  }
+  

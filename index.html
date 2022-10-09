@@ -11,11 +11,16 @@
 <script src="itemDetails.js"></script>
 <body>
 <h1>Cake Price Calculator</h1>
+<h3>Upload existing recipe<h3> 
+<input id="file" class="form-control-file" class="form-control"  type="file" />
+<br/><hr/>
+<h3>Select Ingredients<h3> 
 <select id="selectIng">
     <option>Choose a ingredient</option>
 </select>
 <hr/>
 <div id="ingredientDetails">
+    
     Ingredient Name: <span id="name"></span> <br/> <br/> 
     Measurement unit: <span id="unit"></span> <br/> <br/>
     Price per unit in ₹: <input type="number" step="0.01" id="price"><br/> <br/>
@@ -23,13 +28,13 @@
     Comments: <span id="comment"></span> <br/> <br/>
     Seller: <span id="seller"></span> <br/> <br/> 
     <hr/>
-    Ingredient quantity in <label id="perUnit"> </label>: <input type="number" step="0.01" onkeyup="changeQuantity(this.value)" id="quantity"> <br/><br/>
+    Required quantity in <label id="perUnit"> </label>: <input type="number" step="0.01" onkeyup="changeQuantity(this.value)" id="quantity"> <br/><br/>
     Price of Ingredient in ₹: <span id="ingredientPrice"></span> <br/> <br/>
-    <button type="button"  onclick="addIngredient()">Add</button><br/><br/>
+    <button type="button" class="btn btn-primary" onclick="addIngredient()">Add to recipe</button><br/><br/>
     <hr/>
     <div id="ingredientTableDiv">
         Ingredient Table <br/>
-        <table id="ingredientTable">
+        <table id="ingredientTable" class="table">
             <th>Ingredient</th>
             <th>Brand</th>
             <th>Seller</th>
@@ -39,7 +44,7 @@
     </div>
     <br/>
     Total Price: <span id="totalPrice"></span> + <input type="number" placeholder="Profit percentage" step="0.01" onkeyup="refreshProfitedPrice()" id="profitInput"></input> = <span id="finalPrice"></span><br/><br/>
-    <button onclick='create_file()'>Download Recipe</button>
+    <button class="btn btn-primary" onclick='createFile()'>Download Recipe</button>
 </div>
 
 <script src="./central_logic.js"></script>

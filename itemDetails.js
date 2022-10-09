@@ -47,7 +47,13 @@ var itemDetails =
             "brand": "Mawana",
             "seller": "",
             "comment": ""
+        },{
+            "name": "Helper charges",
+            "unit": "hour",
+            "price": "80",
+            "brand": "-",
+            "seller": "-",
+            "comment": "-"
         }
 
-        
     ]
