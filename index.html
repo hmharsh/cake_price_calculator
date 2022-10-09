@@ -3,6 +3,7 @@
     <title>Price calculator</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <script src="itemDetails.js"></script>
 <body>
@@ -24,9 +25,13 @@
     <button type="button"  onclick="addIngredient()">Add</button><br/><br/>
     <hr/>
     <div id="ingredientTableDiv">
+        Ingredient Table <br/>
         <table id="ingredientTable">
             <th>Ingredient</th>
+            <th>Brand</th>
+            <th>Seller</th>
             <th>Price</th>
+            <th>Remove</th>
         </table>
     </div>
     <br/>
@@ -94,11 +99,13 @@
         Result.push(
             {
                 "name": document.getElementById("name").innerHTML,
-                "price": parseFloat(document.getElementById("price").value)*document.getElementById("quantity").value
+                "price": parseFloat(document.getElementById("price").value)*document.getElementById("quantity").value,
+                "brand": document.getElementById("brand").innerHTML,
+                "seller": document.getElementById("seller").innerHTML
             }  
         )
-        document.getElementById("totalPrice").innerHTML = parseFloat(document.getElementById('totalPrice').innerHTML)  + parseFloat(document.getElementById("ingredientPrice").innerHTML);
         refreshTable(Result)
+        refreshPrice()
         document.getElementById("ingredientTableDiv").style.display='block';
         refreshProfitedPrice()
     }
@@ -118,21 +125,63 @@
            var tr = document.createElement('tr');   
            var td1 = document.createElement('td');
            var td2 = document.createElement('td');
+           var td3 = document.createElement('td');
+           var td4 = document.createElement('td');
+           var td5 = document.createElement('td');
            var text1 = document.createTextNode(Result[i].name);
-           var text2 = document.createTextNode(Result[i].price);
+           var text2 = document.createTextNode(Result[i].brand);
+           var text3 = document.createTextNode(Result[i].seller);
+           var text4 = document.createTextNode(Result[i].price);
+           var text5 = document.createElement('span')
+           text5.className="delete"
+           text5.innerHTML = "❌";
            td1.appendChild(text1);
            td2.appendChild(text2);
+           td3.appendChild(text3);
+           td4.appendChild(text4);
+           td5.appendChild(text5);
            tr.appendChild(td1);
            tr.appendChild(td2);
+           tr.appendChild(td3);
+           tr.appendChild(td4);
+           tr.appendChild(td5);
            table.appendChild(tr);
         }
     }
 
     // On profit value change
     function refreshProfitedPrice() {
-        newProfitPercentage = document.getElementById("profitInput").value
+            newProfitPercentage = document.getElementById("profitInput").value
             totalPriceVal=parseFloat(document.getElementById("totalPrice").innerHTML)
             document.getElementById("finalPrice").innerHTML = totalPriceVal + (totalPriceVal * parseFloat(newProfitPercentage) /100)
+    }
+
+    // On row-delete button click on ingredientTable
+    $(document).ready(function(){
+     $("#ingredientTable").on('click','.delete',function(){
+        removeIngredientFromArr($(this).closest('tr').find("td:first").html()) 
+        $(this).closest('tr').remove();
+      });
+    });
+
+    // Remove supplied ingredient from the Result array based on supplied ingredient name
+    function removeIngredientFromArr(ingredientName){
+        for(i=0;i<=Result.length;i++){
+            if(ingredientName==Result[i].name){
+                Result.splice(i, 1);
+            }
+        }
+        refreshPrice()
+        refreshProfitedPrice()
+    }
+
+    // Refresh price
+    function refreshPrice(){
+        refreshedPrice=0
+        for(i=0;i<Result.length;i++){
+                refreshedPrice = refreshedPrice + parseFloat(Result[i].price)
+        }
+        document.getElementById("totalPrice").innerHTML = refreshedPrice
     }
 
 </script>
