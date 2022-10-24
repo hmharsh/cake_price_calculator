@@ -55,18 +55,33 @@
 
    // On add button click
    function addIngredient(){
+    // Validate
+    var alreadyPresent = false
+    for(i=0;i<Result.length;i++){
+        if(Result[i].name == document.getElementById("name").innerHTML){
+            alreadyPresent = true
+        }
+    }
+
+
+    // Add
+    if (!alreadyPresent) {
        Result.push(
            {
                "name": document.getElementById("name").innerHTML,
                "price": parseFloat(document.getElementById("price").value)*document.getElementById("quantity").value,
                "brand": document.getElementById("brand").innerHTML,
-               "seller": document.getElementById("seller").innerHTML
+               "seller": document.getElementById("seller").innerHTML,
+               "quantity": parseFloat(document.getElementById("quantity").value) + " " + document.getElementById("perUnit").innerHTML
            }  
        )
        refreshTable(Result)
        refreshPrice()
        document.getElementById("ingredientTableDiv").style.display='block';
        refreshProfitedPrice()
+        } else {
+            alert("Ingredient: "+ document.getElementById("name").innerHTML +" is already available in recipie")
+        }
    }
 
    // Refresh the table
@@ -87,23 +102,27 @@
           var td3 = document.createElement('td');
           var td4 = document.createElement('td');
           var td5 = document.createElement('td');
+          var td6 = document.createElement('td');
           var text1 = document.createTextNode(Result[i].name);
           var text2 = document.createTextNode(Result[i].brand);
           var text3 = document.createTextNode(Result[i].seller);
-          var text4 = document.createTextNode(Result[i].price);
-          var text5 = document.createElement('span')
-          text5.className="delete"
-          text5.innerHTML = "❌";
+          var text4 = document.createTextNode(Result[i].quantity);
+          var text5 = document.createTextNode(Result[i].price);
+          var text6 = document.createElement('span')
+          text6.className="delete"
+          text6.innerHTML = "❌";
           td1.appendChild(text1);
           td2.appendChild(text2);
           td3.appendChild(text3);
           td4.appendChild(text4);
           td5.appendChild(text5);
+          td6.appendChild(text6);
           tr.appendChild(td1);
           tr.appendChild(td2);
           tr.appendChild(td3);
           tr.appendChild(td4);
           tr.appendChild(td5);
+          tr.appendChild(td6);
           table.appendChild(tr);
        }
    }
