@@ -409,6 +409,335 @@ var itemDetails =
             "comment": "500 gram pack 280 MRP"
         },
         {
+            "name": "Orange",
+            "unit": "noc",
+            "price": "20",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+        {
+            "name": "Apple",
+            "unit": "gram",
+            "price": "0.12",
+            "brand": "Shimla",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+        {
+            "name": "Green apple",
+            "unit": "gram",
+            "price": "0.3",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+        {
+            "name": "Banana",
+            "unit": "noc",
+            "price": "6.5",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+        {
+            "name": "Carrot",
+            "unit": "gram",
+            "price": ".076",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+
+
+
+        {
+            "name": "Pumpkin/kaddu",
+            "unit": "gram",
+            "price": ".07",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+        {
+            "name": "Fresh blueberry",
+            "unit": "gram",
+            "price": "1.52",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "125 gram"
+        },
+        {
+            "name": "Beetroot/chukander",
+            "unit": "gram",
+            "price": ".055",
+            "brand": "-",
+            "seller": "Big basket",
+            "comment": "-"
+        },
+        {
+            "name": "Dry cranberries",
+            "unit": "gram",
+            "price": "1.04",
+            "brand": "-",
+            "seller": "Dry fruit house / shoppers city",
+            "comment": "115 gram pack"
+        },
+        {
+            "name": "Dry blue berries",
+            "unit": "gram",
+            "price": "1.04",
+            "brand": "-",
+            "seller": "Dry fruit house / shoppers city",
+            "comment": "115 gram pack"
+        },
+        {
+            "name": "dry Apricots / aaloo bukhara",
+            "unit": "gram",
+            "price": "1.6",
+            "brand": "-",
+            "seller": "Dry fruit house",
+            "comment": "200 gram pack"
+        },
+        {
+            "name": "Dry orange",
+            "unit": "gram",
+            "price": "1",
+            "brand": "-",
+            "seller": "Dry fruit house",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Pista flax / mahaj",
+            "unit": "gram",
+            "price": "3",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Almond",
+            "unit": "gram",
+            "price": ".88",
+            "brand": "-",
+            "seller": "Dry fruit house",
+            "comment": "-"
+        },
+        {
+            "name": "Pumpkin seeds",
+            "unit": "gram",
+            "price": "1",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "200 gram pack"
+        },
+        {
+            "name": "Sunflower seeds",
+            "unit": "gram",
+            "price": ".5",
+            "brand": "BB royal",
+            "seller": "Big basket",
+            "comment": "200 gram"
+        },
+        {
+            "name": "Melon seeds",
+            "unit": "gram",
+            "price": ".057",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "poppy seeds / khaskhas",
+            "unit": "gram",
+            "price": "2.4",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Sesame / tilli",
+            "unit": "gram",
+            "price": ".32",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Pine nuts / chilgoja",
+            "unit": "gram",
+            "price": "2.47",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Pecan nuts",
+            "unit": "gram",
+            "price": "2.8",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Hezel nuts",
+            "unit": "gram",
+            "price": "1.26",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Dry kiwi",
+            "unit": "gram",
+            "price": ".82",
+            "brand": "Fresho",
+            "seller": "Big basket",
+            "comment": "200 gram"
+        },
+        {
+            "name": "Cashew / Kaju",
+            "unit": "gram",
+            "price": ".99",
+            "brand": "BB Royal",
+            "seller": "Big basket",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Raisins / kishmish",
+            "unit": "gram",
+            "price": ".4",
+            "brand": "BB royal",
+            "seller": "Big basket",
+            "comment": "200 gram pack"
+        },
+        {
+            "name": "Sliver flax",
+            "unit": "noc",
+            "price": "4",
+            "brand": "-",
+            "seller": "Bakers Junction",
+            "comment": "80 rupee pack"
+        },
+        {
+            "name": "Golden flax",
+            "unit": "gram",
+            "price": "4",
+            "brand": "-",
+            "seller": "Bakers Junction",
+            "comment": "80 rupee pack"
+        },
+        {
+            "name": "Rose patels",
+            "unit": "gram",
+            "price": "1.75",
+            "brand": "Tea monk",
+            "seller": "Big basket",
+            "comment": "50 gram pack"
+        },
+        {
+            "name": "Saffron essence",
+            "unit": "ml",
+            "price": "3.4",
+            "brand": "Fab",
+            "seller": "Bakewala",
+            "comment": "30 ml bottel"
+        },
+        {
+            "name": "Whipped cream",
+            "unit": "gram",
+            "price": ".19",
+            "brand": "Tropolite",
+            "seller": "Bakers majesty",
+            "comment": "1 KG pack"
+        },
+        {
+            "name": "Gems",
+            "unit": "gram",
+            "price": "2.14",
+            "brand": "Ask food",
+            "seller": "Bakewala / hypermart",
+            "comment": "28 rupee pack"
+        },
+        {
+            "name": "Tuti fruty",
+            "unit": "gram",
+            "price": ".3",
+            "brand": "Ask food",
+            "seller": "Bake wala",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "Cherry",
+            "unit": "gram",
+            "price": ".5",
+            "brand": "Ask food",
+            "seller": "Bakewala",
+            "comment": "80 rupee pack"
+        },
+        {
+            "name": "Shreekhand elaichi",
+            "unit": "gram",
+            "price": "0.225",
+            "brand": "Amul",
+            "seller": "Reliance / jio mart",
+            "comment": "80 rupee pack"
+        },
+        {
+            "name": "Milk powder",
+            "unit": "gram",
+            "price": ".43",
+            "brand": "Amulya",
+            "seller": "big basket",
+            "comment": "1 kg pack"
+        },
+        {
+            "name": "Kaju katli",
+            "unit": "gram",
+            "price": "1.1",
+            "brand": "Kanti sweets",
+            "seller": "Kanti sweets",
+            "comment": "100 gram"
+        },
+        {
+            "name": "Gulab jamun small",
+            "unit": "gram",
+            "price": ".65",
+            "brand": "Kanti sweets",
+            "seller": "Kanti sweets",
+            "comment": "100 gram"
+        },
+        {
+            "name": "Pheni",
+            "unit": "gram",
+            "price": ".55",
+            "brand": "Kanti sweets",
+            "seller": "Kanti sweets",
+            "comment": "120 gram for one round"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "name": "Additional delivery charges",
+            "unit": "standard",
+            "price": "5",
+            "brand": "-",
+            "seller": "-",
+            "comment": "-"
+        },
+        {
             "name": "Helper charges",
             "unit": "half hour",
             "price": "40",
