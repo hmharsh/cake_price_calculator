@@ -24,12 +24,12 @@
        select.appendChild(el);
    }
 
-   // On select change
-   document.getElementById('selectIng').addEventListener('change', function() {
+
+function ingChange(){
    document.getElementById("ingredientDetails").style.display='block';
    document.getElementById("quantity").value = "";
    for(var i = 0; i < itemDetails.length; i++) {
-       if (this.value == itemDetails[i].name) {
+       if ($('#selectedIng').val() == itemDetails[i].name) {
            document.getElementById("name").innerHTML = itemDetails[i].name;
            document.getElementById("unit").innerHTML = itemDetails[i].unit;
            document.getElementById("perUnit").innerHTML = itemDetails[i].unit;
@@ -41,7 +41,7 @@
    }
    document.getElementById("ingredientPrice").innerHTML=0
    document.getElementById("price").disabled = false
-   });
+   }
 
    // On change in Quantity
    function changeQuantity(newQuantity){
@@ -55,6 +55,11 @@
 
    // On add button click
    function addIngredient(){
+    if (parseFloat(document.getElementById("price").value)*document.getElementById("quantity").value == 0){
+      alert("Price should be more than zero")
+      return(0)
+    }
+
     // Validate
     var alreadyPresent = false
     for(i=0;i<Result.length;i++){
@@ -62,7 +67,6 @@
             alreadyPresent = true
         }
     }
-
 
     // Add
     if (!alreadyPresent) {
@@ -210,3 +214,6 @@
        document.getElementById("ingredientDetails").style.display='block';
   }
   
+function clearSelection(){
+    $('#selectedIng').val("")
+}
