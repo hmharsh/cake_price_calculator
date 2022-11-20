@@ -1,11 +1,11 @@
-var itemDetails = 
+var itemDetails =
     [
         {
             "name": "Maida",
             "unit": "gram",
             "price": ".06",
             "brand": "Gangwal",
-            "seller": "jio mart",
+            "seller": "jio-mart",
             "comment": "500 gram pack"
         },
         {
@@ -13,7 +13,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".06",
             "brand": "Gangwal",
-            "seller": "jio mart",
+            "seller": "jio-mart",
             "comment": "500 gram pack"
         },
         {
@@ -21,15 +21,15 @@ var itemDetails =
             "unit": "gram",
             "price": ".062",
             "brand": "Ashirwad",
-            "seller": "",
-            "comment": ""
+            "seller": "use from home",
+            "comment": "use from home"
         },
         {
             "name": "jaggery powder",
             "unit": "gram",
             "price": ".19",
             "brand": "Pro nature organic",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "400 gram pouch"
         },
         {
@@ -37,151 +37,135 @@ var itemDetails =
             "unit": "ml",
             "price": ".155",
             "brand": "Fortune soya",
-            "seller": "big basket",
+            "seller": "big-basket",
             "comment": "soyabean oil 1 liter pack"
         },
         {
             "name": "Brown sugar",
             "unit": "gram",
-            "price": ".14",
+            "price": ".099",
             "brand": "Mawana",
-            "seller": "bake wala",
-            "comment": ""
+            "seller": "bake-wala",
+            "comment": "https://www.bake-wala.com/mawana-brown-sugar-1-kg"
         },
         {
             "name": "Baking powder",
             "unit": "gram",
-            "price": ".225",
+            "price": ".35",
             "brand": "winkfield",
-            "seller": "Bakewala",
-            "comment": ""
+            "seller": "bake-wala",
+            "comment": "100 gram plastic bottel"
         },
         {
             "name": "Baking soda",
             "unit": "gram",
             "price": ".3",
             "brand": "winkfield",
-            "seller": "big basket",
-            "comment": ""
+            "seller": "big-basket",
+            "comment": "100 gram plastic bottel"
         },
-        {
-            "name": "Glutan free flour",
-            "unit": "gram",
-            "price": ".15",
-            "brand": "Jiwa",
-            "seller": "",
-            "comment": ""
-        },     
         {
             "name": "Castor sugar",
             "unit": "gram",
             "price": ".13",
             "brand": "Mawana",
-            "seller": "Bakewala",
-            "comment": ""
+            "seller": "bake-wala",
+            "comment": "https://www.bake-wala.com/mawana-caster-sugar-1-kg"
         },
         {
             "name": "Cocoa powder",
             "unit": "gram",
-            "price": ".1",
+            "price": "1.1",
             "brand": "winkfield",
-            "seller": "big-basket/jio-mart/bigbasket",
-            "comment": ""
-        },
-        {
-            "name": "Xanthan gum",
-            "unit": "gram",
-            "price": "1.225",
-            "brand": "Urban platter",
-            "seller": "",
-            "comment": ""
+            "seller": "big-basket/jio-mart/big-basket",
+            "comment": "150 gram plastic bottel"
         },
         {
             "name": "Chocolate soya milk",
             "unit": "gram",
-            "price": ".175",
+            "price": ".145",
             "brand": "Sofit",
-            "seller": "",
-            "comment": ""
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/175118/sofit-soya-drink-chocolate-1-l-tetra"
         },
         {
             "name": "Vinegar",
-            "unit": "gram",
-            "price": ".623",
-            "brand": "Heinz",
-            "seller": "",
-            "comment": ""
+            "unit": "ml",
+            "price": ".34",
+            "brand": "Del Monte",
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/40006671/del-monte-vinegar-brewed-180-g-bottle/"
         },
         {
             "name": "Multi grain atta",
             "unit": "gram",
-            "price": ".085",
-            "brand": "24 mantra organic",
-            "seller": "",
-            "comment": ""
+            "price": ".06",
+            "brand": "BB royal",
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/40189430/bb-royal-multigrain-atta-500-g-pouch"
         },
         {
             "name": "Ragi atta",
             "unit": "gram",
-            "price": ".09",
-            "brand": "24 mantra organic",
-            "seller": "",
-            "comment": ""
+            "price": ".08",
+            "brand": "BB royal",
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/40172981/aashirvaad-natures-super-foods-ragi-flour-500-g-pouch"
         },
         {
             "name": "Butter",
             "unit": "gram",
-            "price": ".492",
+            "price": ".53",
             "brand": "Amul",
-            "seller": "",
-            "comment": ""
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/104864/amul-butter-pasteurised-500-g-carton/"
         },
         {
             "name": "Curd",
             "unit": "gram",
-            "price": ".09",
+            "price": ".1",
             "brand": "Milky mist",
-            "seller": "",
-            "comment": ""
+            "seller": "jio-mart/big-basket",
+            "comment": "https://www.jiomart.com/p/groceries/milky-mist-curd-200-g-pouch/590032826"
         },
         {
             "name": "Dark compound",
             "unit": "gram",
-            "price": ".25",
+            "price": ".26",
             "brand": "Vanleer, 2M",
-            "seller": "",
-            "comment": ""
+            "seller": "bake-wala / amazon",
+            "comment": "500 gram or 1kg pack"
         },
         {
             "name": "Vanilla essence",
             "unit": "ml",
-            "price": "1.5",
-            "brand": "symega",
-            "seller": "",
-            "comment": ""
+            "price": "1",
+            "brand": "Puramate Culinary",
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/40211300/puramate-culinary-essence-vanilla-30-ml-bottle/"
         },
         {
             "name": "Instant coffee powder",
             "unit": "gram",
-            "price": "1.34",
+            "price": "0.91",
             "brand": "Nescafe",
-            "seller": "",
-            "comment": ""
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/40020218/nescafe-sunrise-instant-coffee-55-g-pouch/"
         },
         {
             "name": "Sour cream",
             "unit": "gram",
-            "price": ".325",
+            "price": ".33",
             "brand": "Amul",
-            "seller": "",
-            "comment": ""
+            "seller": "big-basket",
+            "comment": "https://www.bigbasket.com/pd/30008580/amul-sour-cream-200-g/"
         },
         {
             "name": "Milk",
             "unit": "ml",
             "price": ".046",
             "brand": "Nandini",
-            "seller": "Dairy",
+            "seller": "use from home",
             "comment": ""
         },
         {
@@ -189,15 +173,15 @@ var itemDetails =
             "unit": "gram",
             "price": ".2.77",
             "brand": "Weissmill",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "100 gram pouch"
         },
         {
-            "name": "Condensed Milk",
+            "name": "Condensed Milk / milk maid",
             "unit": "gram",
             "price": ".29",
             "brand": "Amul",
-            "seller": "Reliance",
+            "seller": "jio-mart",
             "comment": "Amul methai mate 200 gram tin pack"
         },
         {
@@ -213,15 +197,15 @@ var itemDetails =
             "unit": "ml",
             "price": "0.391",
             "brand": "American garden",
-            "seller": "Big-Basket",
-            "comment": "473 ml bottel in 185 MRP on big basket"
+            "seller": "big-basket",
+            "comment": "473 ml bottel in 185 MRP on big-basket"
         },
         {
             "name": "Olive oil",
             "unit": "ml",
             "price": "1.5",
             "brand": "Delmonte",
-            "seller": "Reliance/Nearby showroom/big basket",
+            "seller": "jio-mart/big-basket",
             "comment": "100 ml bottel in 150"
         },
         {
@@ -229,7 +213,7 @@ var itemDetails =
             "unit": "ml",
             "price": ".27",
             "brand": "Saffola",
-            "seller": "big basket",
+            "seller": "big-basket",
             "comment": "53 rupees pack for 200 gram"
         },
         {
@@ -237,7 +221,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".13",
             "brand": "BB royal",
-            "seller": "big basket",
+            "seller": "big-basket",
             "comment": "400 gram pack in 53"
         },
         {
@@ -245,7 +229,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".04",
             "brand": "Gangwal/BB royal",
-            "seller": "big basket",
+            "seller": "big-basket",
             "comment": "40 Rupees per kg - BB Royal"
         },
         {
@@ -253,7 +237,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".53",
             "brand": "Amul",
-            "seller": "Reliance / big basket",
+            "seller": "jio-mart / big-basket",
             "comment": "500 gram in 265 rupees"
         },
         {
@@ -261,7 +245,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".55",
             "brand": "Tate & lyle",
-            "seller": "Amazon",
+            "seller": "amazon",
             "comment": "550 rupees per 1000 gram"
         },
         {
@@ -269,7 +253,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".15",
             "brand": "blue bird / Weissmill",
-            "seller": "Amazon",
+            "seller": "amazon",
             "comment": "150 rupees per kg"
         },
         {
@@ -277,7 +261,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".75",
             "brand": "Tate & lyle",
-            "seller": "Amazon",
+            "seller": "amazon",
             "comment": "750 rupees per kg"
         },
         {
@@ -285,7 +269,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".195",
             "brand": "Jiwa",
-            "seller": "Amazon",
+            "seller": "amazon",
             "comment": "195 per KG"
         },
         {
@@ -293,7 +277,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".37",
             "brand": "BB royal",
-            "seller": "big basket",
+            "seller": "big-basket",
             "comment": "37 rupees pouch of 100 gram, BB royal"
         },
         {
@@ -309,7 +293,7 @@ var itemDetails =
             "unit": "ml",
             "price": ".27",
             "brand": "Amul",
-            "seller": "Reliance",
+            "seller": "jio-mart",
             "comment": "250 ml for 67 rupees"
         },
         {
@@ -317,7 +301,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".39",
             "brand": "Milky Mist",
-            "seller": "Reliance/big basket",
+            "seller": "jio-mart/big-basket",
             "comment": "200 gram for 78 rupees"
         },
         {
@@ -325,7 +309,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".65",
             "brand": "Ask foods",
-            "seller": "Bakewala/amazon",
+            "seller": "bake-wala/amazon",
             "comment": "100 gram pouch with 65 MRP"
         },
         {
@@ -333,7 +317,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".85",
             "brand": "Ask foods",
-            "seller": "Bakewala/amazon",
+            "seller": "bake-wala/amazon",
             "comment": "100 gram pouch with 85 MRP"
         },
         {
@@ -341,7 +325,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".80",
             "brand": "Ask foods",
-            "seller": "Bakewala/amazon",
+            "seller": "bake-wala/amazon",
             "comment": "100 gram pouch with 80 MRP"
         },
         {
@@ -349,7 +333,7 @@ var itemDetails =
             "unit": "ml",
             "price": "3.8",
             "brand": "Fab",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "30 ml bottel container with 115 MRP"
         },
         {
@@ -357,7 +341,7 @@ var itemDetails =
             "unit": "gram",
             "price": "7.2",
             "brand": "Magic colors",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "25 gram bottel 180 MRP"
         },
         {
@@ -365,7 +349,7 @@ var itemDetails =
             "unit": "gram",
             "price": "13",
             "brand": "Fab",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "30 gram bottel 390 MRP"
         },
         {
@@ -373,7 +357,7 @@ var itemDetails =
             "unit": "gram",
             "price": "3.8",
             "brand": "Fab",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "30 gram bottel 115 MRP"
         },
         {
@@ -381,7 +365,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.5",
             "brand": "Kissan",
-            "seller": "Reliance",
+            "seller": "jio-mart",
             "comment": "350 gram bottel 175 MRP"
         },
         {
@@ -389,7 +373,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.18",
             "brand": "BB royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "500 gram bottel 94 MRP"
         },
         {
@@ -397,7 +381,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.432",
             "brand": "Vanleer",
-            "seller": "bakewala",
+            "seller": "bake-wala",
             "comment": "500 gram pack 216 MRP"
         },
         {
@@ -405,7 +389,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.56",
             "brand": "Vanleer",
-            "seller": "bakewala",
+            "seller": "bake-wala",
             "comment": "500 gram pack 280 MRP"
         },
         {
@@ -413,7 +397,7 @@ var itemDetails =
             "unit": "noc",
             "price": "20",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
         {
@@ -421,7 +405,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.12",
             "brand": "Shimla",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
         {
@@ -429,7 +413,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.3",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
         {
@@ -437,7 +421,7 @@ var itemDetails =
             "unit": "noc",
             "price": "6.5",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
         {
@@ -445,7 +429,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".076",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
 
@@ -456,7 +440,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".07",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
         {
@@ -464,7 +448,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.52",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "125 gram"
         },
         {
@@ -472,7 +456,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".055",
             "brand": "-",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "-"
         },
         {
@@ -480,7 +464,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.04",
             "brand": "-",
-            "seller": "Dry fruit house / shoppers city",
+            "seller": "dry-fruit-house / shoppers-city",
             "comment": "115 gram pack"
         },
         {
@@ -488,7 +472,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.04",
             "brand": "-",
-            "seller": "Dry fruit house / shoppers city",
+            "seller": "dry-fruit-house / shoppers-city",
             "comment": "115 gram pack"
         },
         {
@@ -496,7 +480,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.6",
             "brand": "-",
-            "seller": "Dry fruit house",
+            "seller": "dry-fruit-house",
             "comment": "200 gram pack"
         },
         {
@@ -504,7 +488,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1",
             "brand": "-",
-            "seller": "Dry fruit house",
+            "seller": "dry-fruit-house",
             "comment": "100 gram pack"
         },
         {
@@ -512,7 +496,7 @@ var itemDetails =
             "unit": "gram",
             "price": "3",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -520,7 +504,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".88",
             "brand": "-",
-            "seller": "Dry fruit house",
+            "seller": "dry-fruit-house",
             "comment": "-"
         },
         {
@@ -528,7 +512,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "200 gram pack"
         },
         {
@@ -536,7 +520,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".5",
             "brand": "BB royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "200 gram"
         },
         {
@@ -544,7 +528,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".057",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -552,7 +536,7 @@ var itemDetails =
             "unit": "gram",
             "price": "2.4",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -560,7 +544,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".32",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -568,7 +552,7 @@ var itemDetails =
             "unit": "gram",
             "price": "2.47",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -576,7 +560,7 @@ var itemDetails =
             "unit": "gram",
             "price": "2.8",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -584,7 +568,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.26",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -592,7 +576,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".82",
             "brand": "Fresho",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "200 gram"
         },
         {
@@ -600,7 +584,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".99",
             "brand": "BB Royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "100 gram pack"
         },
         {
@@ -608,7 +592,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".4",
             "brand": "BB royal",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "200 gram pack"
         },
         {
@@ -632,7 +616,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.75",
             "brand": "Tea monk",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "50 gram pack"
         },
         {
@@ -640,7 +624,7 @@ var itemDetails =
             "unit": "ml",
             "price": "3.4",
             "brand": "Fab",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "30 ml bottel"
         },
         {
@@ -656,7 +640,7 @@ var itemDetails =
             "unit": "gram",
             "price": "2.14",
             "brand": "Ask food",
-            "seller": "Bakewala / hypermart",
+            "seller": "bake-wala / hypermart",
             "comment": "28 rupee pack"
         },
         {
@@ -664,7 +648,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".3",
             "brand": "Ask food",
-            "seller": "Bake wala",
+            "seller": "bake-wala",
             "comment": "100 gram pack"
         },
         {
@@ -672,7 +656,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".5",
             "brand": "Ask food",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "80 rupee pack"
         },
         {
@@ -680,7 +664,7 @@ var itemDetails =
             "unit": "gram",
             "price": "0.225",
             "brand": "Amul",
-            "seller": "Reliance / jio mart",
+            "seller": "reliance / jio-mart",
             "comment": "80 rupee pack"
         },
         {
@@ -688,7 +672,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".43",
             "brand": "Amulya",
-            "seller": "big basket",
+            "seller": "big-basket",
             "comment": "1 kg pack"
         },
         {
@@ -720,7 +704,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".28",
             "brand": "5 star",
-            "seller": "Shoppers stop",
+            "seller": "shoppers-city",
             "comment": "500 gram pack"
         },
         {
@@ -728,7 +712,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".55",
             "brand": "5 star",
-            "seller": "Shoppers stop",
+            "seller": "shoppers-city",
             "comment": "250 gram loose packaging"
         },
         {
@@ -736,7 +720,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".134",
             "brand": "BB royal",
-            "seller": "Bib Basket",
+            "seller": "big-basket",
             "comment": "500 gram pack"
         },
         {
@@ -744,23 +728,23 @@ var itemDetails =
             "unit": "gram",
             "price": ".16",
             "brand": "Family mart",
-            "seller": "Family mart",
+            "seller": "family-mart",
             "comment": "500 gram pack"
         },
         {
             "name": "All in one fariyali aata",
             "unit": "gram",
             "price": ".255",
-            "brand": "Home Made",
-            "seller": "Home made",
+            "brand": "use from home",
+            "seller": "use from home",
             "comment": "150 gram mordhan + 35 gram sabudana + 100 gram rajgira + 75 gram singhada"
         },
         {
             "name": "fariyali aata",
             "unit": "gram",
             "price": ".17",
-            "brand": "Home Made",
-            "seller": "Home Made",
+            "brand": "use from home",
+            "seller": "use from home",
             "comment": "300 gram mordhan + 75 gram sabudana"
         },
         {
@@ -768,7 +752,7 @@ var itemDetails =
             "unit": "gram",
             "price": "8.43",
             "brand": "Keya seed powder",
-            "seller": "Big basket",
+            "seller": "big-basket",
             "comment": "https://www.bigbasket.com/pd/40029911/keya-powder-cardamom-seed-50-g/"
         },
         {
@@ -776,7 +760,7 @@ var itemDetails =
             "unit": "milligram",
             "price": ".35",
             "brand": "Everest",
-            "seller": "Big Basket",
+            "seller": "big-basket",
             "comment": "small pack"
         },
         {
@@ -784,7 +768,7 @@ var itemDetails =
             "unit": "gram",
             "price": "3.18",
             "brand": "Keya",
-            "seller": "Big Basket",
+            "seller": "big-basket",
             "comment": "50 gram plastic bottel"
         },
         {
@@ -792,7 +776,7 @@ var itemDetails =
             "unit": "gram",
             "price": "1.65",
             "brand": "BB royal",
-            "seller": "Big Basket",
+            "seller": "big-basket",
             "comment": "100 gram pack, without shell"
         },
         {
@@ -874,5 +858,45 @@ var itemDetails =
             "brand": "-",
             "seller": "-",
             "comment": "In case some ammount needs to be substituted"
+        },
+        {
+            "name": "Addition",
+            "unit": "standard",
+            "price": "1",
+            "brand": "-",
+            "seller": "-",
+            "comment": "In case some ammount needs to be Added"
+        },
+        {
+            "name": "Water",
+            "unit": "ml",
+            "price": "0.005",
+            "brand": "-",
+            "seller": "-",
+            "comment": "Filtered water"
+        },
+        {
+            "name": "Salt",
+            "unit": "gram",
+            "price": "0.022",
+            "brand": "TATA",
+            "seller": "jio-mart",
+            "comment": "1 kg pack"
+        },
+        {
+            "name": "lemon",
+            "unit": "noc",
+            "price": "5",
+            "brand": "",
+            "seller": "big-basket",
+            "comment": ""
+        },
+        {
+            "name": "Depriciation of materials",
+            "unit": "Standard",
+            "price": "2",
+            "brand": "-",
+            "seller": "-",
+            "comment": "-"
         }
     ]

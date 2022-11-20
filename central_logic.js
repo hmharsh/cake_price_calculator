@@ -101,7 +101,7 @@ function ingChange(){
 
        // Refill all elements  
        for(var i = 0; i < Result.length; i++) {
-          var tr = document.createElement('tr');   
+          var tr = document.createElement('tr');
           var td1 = document.createElement('td');
           var td2 = document.createElement('td');
           var td3 = document.createElement('td');
@@ -114,7 +114,9 @@ function ingChange(){
           var text3 = document.createTextNode(Result[i].seller);
           var text4 = document.createTextNode(Result[i].quantity);
           var text5 = document.createTextNode(Result[i].price);
-          var text6 = document.createTextNode(Result[i].comment);
+          var text6 = document.createElement('span')
+          text6.innerHTML = Result[i].comment;
+          text6.className="small_font"
           var text7 = document.createElement('span')
           text7.className="delete"
           text7.innerHTML = "❌";

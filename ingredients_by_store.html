@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Price calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script src="itemDetails.js"></script>
+<body onload="loaded()">
+    <script>
+        function sleep(miliseconds) {
+           var currentTime = new Date().getTime();
+           while (currentTime + miliseconds >= new Date().getTime()) {
+           }
+        }
+        function loaded(){
+            var ingredientStoredata = []
+            function searchShop(shopName, ingredientStoredata){
+                for(var i = 0; i < ingredientStoredata.length; i++) {
+                    if(ingredientStoredata[i].shop == shopName){
+                        return true
+                    }
+                }
+                return false
+            }
+            function addIngredienttoSeller(ingredientName, sellerName, ingredientStoredata){
+                for(var i = 0; i < ingredientStoredata.length; i++) {
+                   if(ingredientStoredata[i].shop == sellerName){
+                     ingredientStoredata[i].ingredient.push(ingredientName)
+                   }
+                }
+            }
+            function addNewIng(ingSeller, ingName, ingredientStoredata){
+                if (!searchShop(ingSeller, ingredientStoredata)){
+                    ingredientStoredata.push({
+                        "shop": ingSeller,
+                        "ingredient": [ingName]
+                    })
+                } else {
+                    addIngredienttoSeller(itemDetails[i].name, itemDetails[i].seller, ingredientStoredata)
+                }
+            }
+
+            for(var i = 0; i < itemDetails.length; i++) {
+                // sleep(10)
+                // if (itemDetails[i].seller.includes("/")){
+                //     var availableStoreArr = itemDetails[i].seller.split("/")
+                //     for(var j = 0; j < availableStoreArr.length; j++){
+                //         addNewIng(availableStoreArr[j].trim(), itemDetails[i].name.trim(), ingredientStoredata)
+                //     }
+                    
+                // } else{
+                    addNewIng(itemDetails[i].seller.trim(), itemDetails[i].name.trim(), ingredientStoredata)
+                //}
+            }
+            //console.log(ingredientStoredata)
+            table=document.getElementById("ingredient_by_store") 
+            for(var i = 0; i < ingredientStoredata.length; i++) {
+               var tr = document.createElement('tr');   
+               var td1 = document.createElement('td');
+               var td2 = document.createElement('td');
+               var text1 = document.createTextNode(ingredientStoredata[i].shop);
+               var text2 = document.createTextNode(ingredientStoredata[i].ingredient);
+               td1.appendChild(text1);
+               td2.appendChild(text2);
+               tr.appendChild(td1);
+               tr.appendChild(td2);
+               table.appendChild(tr);
+            }
+        }
+        
+    </script>
+    <h1 aligh="center">Ingredients by store</h1><br/>
+    <table id="ingredient_by_store" class="table" style="padding: 70px">
+        <th>Shop</th>
+        <th>Ingredients</th>
+    </table>
+</body>
+</html>
