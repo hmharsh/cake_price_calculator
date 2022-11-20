@@ -24,12 +24,12 @@
 <hr/>
 <div id="ingredientDetails">
     
-    Ingredient Name: <span id="name"></span> <br/> <br/> 
-    Measurement unit: <span id="unit"></span> <br/> <br/>
-    Price per unit in ₹: <input type="number" step="0.01" id="price"><br/> <br/>
-    Brand: <span id="brand"></span> <br/> <br/>
-    Comments: <span id="comment"></span> <br/> <br/>
-    Seller: <span id="seller"></span> <br/> <br/> 
+    Ingredient Name: <span id="name"></span> <br/><br/>
+    Measurement unit: <span id="unit"></span> <br/><br/>
+    Price per unit in ₹: <input type="number" step="0.01" id="price"><br/><br/>
+    Brand: <span id="brand"></span> <br/><br/>
+    Comments: <input type="text" id="comment"> <!--<span id="comment"></span>--> <br/><br/>
+    Seller: <span id="seller"></span> <br/><br/>
     <hr/>
     Required quantity in <label id="perUnit"> </label>: <input type="number" step="0.01"  onkeyup="changeQuantity(this.value)" id="quantity"> <br/><br/>
     Price of Ingredient in ₹: <span id="ingredientPrice"></span> <br/> <br/>
@@ -43,6 +43,7 @@
             <th>Seller</th>
             <th>Quantity</th>
             <th>Price</th>
+            <th>Comment</th>
             <th>Remove</th>
         </table>
     </div>

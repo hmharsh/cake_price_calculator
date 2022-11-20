@@ -9,7 +9,7 @@
    document.getElementById("perUnit").innerHTML = "";
    document.getElementById("price").value = 0
    document.getElementById("brand").innerHTML = "";
-   document.getElementById("comment").innerHTML = "";
+   document.getElementById("comment").value = "";
    document.getElementById("seller").innerHTML = "";
    document.getElementById("totalPrice").innerHTML = totalPrice;
    };
@@ -35,7 +35,7 @@ function ingChange(){
            document.getElementById("perUnit").innerHTML = itemDetails[i].unit;
            document.getElementById("price").value = parseFloat(itemDetails[i].price);
            document.getElementById("brand").innerHTML = itemDetails[i].brand;
-           document.getElementById("comment").innerHTML = itemDetails[i].comment;
+           document.getElementById("comment").value = itemDetails[i].comment;
            document.getElementById("seller").innerHTML = itemDetails[i].seller;
        }
    }
@@ -76,7 +76,8 @@ function ingChange(){
                "price": parseFloat(document.getElementById("price").value)*document.getElementById("quantity").value,
                "brand": document.getElementById("brand").innerHTML,
                "seller": document.getElementById("seller").innerHTML,
-               "quantity": parseFloat(document.getElementById("quantity").value) + " " + document.getElementById("perUnit").innerHTML
+               "quantity": parseFloat(document.getElementById("quantity").value) + " " + document.getElementById("perUnit").innerHTML,
+               "comment": document.getElementById("comment").value
            }  
        )
        refreshTable(Result)
@@ -107,26 +108,30 @@ function ingChange(){
           var td4 = document.createElement('td');
           var td5 = document.createElement('td');
           var td6 = document.createElement('td');
+          var td7 = document.createElement('td');
           var text1 = document.createTextNode(Result[i].name);
           var text2 = document.createTextNode(Result[i].brand);
           var text3 = document.createTextNode(Result[i].seller);
           var text4 = document.createTextNode(Result[i].quantity);
           var text5 = document.createTextNode(Result[i].price);
-          var text6 = document.createElement('span')
-          text6.className="delete"
-          text6.innerHTML = "❌";
+          var text6 = document.createTextNode(Result[i].comment);
+          var text7 = document.createElement('span')
+          text7.className="delete"
+          text7.innerHTML = "❌";
           td1.appendChild(text1);
           td2.appendChild(text2);
           td3.appendChild(text3);
           td4.appendChild(text4);
           td5.appendChild(text5);
           td6.appendChild(text6);
+          td7.appendChild(text7);
           tr.appendChild(td1);
           tr.appendChild(td2);
           tr.appendChild(td3);
           tr.appendChild(td4);
           tr.appendChild(td5);
           tr.appendChild(td6);
+          tr.appendChild(td7);
           table.appendChild(tr);
        }
    }

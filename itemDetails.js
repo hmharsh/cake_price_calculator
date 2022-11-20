@@ -3,18 +3,18 @@ var itemDetails =
         {
             "name": "Maida",
             "unit": "gram",
-            "price": ".055",
+            "price": ".06",
             "brand": "Gangwal",
-            "seller": "",
-            "comment": ""
+            "seller": "jio mart",
+            "comment": "500 gram pack"
         },
         {
             "name": "Rawa",
             "unit": "gram",
-            "price": ".08",
+            "price": ".06",
             "brand": "Gangwal",
-            "seller": "",
-            "comment": ""
+            "seller": "jio mart",
+            "comment": "500 gram pack"
         },
         {
             "name": "wheat flour",
@@ -27,25 +27,25 @@ var itemDetails =
         {
             "name": "jaggery powder",
             "unit": "gram",
-            "price": ".15",
+            "price": ".19",
             "brand": "Pro nature organic",
-            "seller": "test seller value",
-            "comment": "test comment value"
+            "seller": "Big basket",
+            "comment": "400 gram pouch"
         },
         {
             "name": "flavourless oil",
             "unit": "ml",
             "price": ".155",
             "brand": "Fortune soya",
-            "seller": "",
-            "comment": ""
+            "seller": "big basket",
+            "comment": "soyabean oil 1 liter pack"
         },
         {
             "name": "Brown sugar",
             "unit": "gram",
-            "price": ".1",
+            "price": ".14",
             "brand": "Mawana",
-            "seller": "",
+            "seller": "bake wala",
             "comment": ""
         },
         {
@@ -61,7 +61,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".3",
             "brand": "winkfield",
-            "seller": "",
+            "seller": "big basket",
             "comment": ""
         },
         {
@@ -77,7 +77,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".13",
             "brand": "Mawana",
-            "seller": "",
+            "seller": "Bakewala",
             "comment": ""
         },
         {
@@ -85,7 +85,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".1",
             "brand": "winkfield",
-            "seller": "",
+            "seller": "big-basket/jio-mart/bigbasket",
             "comment": ""
         },
         {
