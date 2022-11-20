@@ -715,22 +715,88 @@ var itemDetails =
             "seller": "Kanti sweets",
             "comment": "120 gram for one round"
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
-            "name": "Additional delivery charges",
+            "name": "Rajgira aata",
+            "unit": "gram",
+            "price": ".28",
+            "brand": "5 star",
+            "seller": "Shoppers stop",
+            "comment": "500 gram pack"
+        },
+        {
+            "name": "Singhada aata",
+            "unit": "gram",
+            "price": ".55",
+            "brand": "5 star",
+            "seller": "Shoppers stop",
+            "comment": "250 gram loose packaging"
+        },
+        {
+            "name": "Sabudana",
+            "unit": "gram",
+            "price": ".134",
+            "brand": "BB royal",
+            "seller": "Bib Basket",
+            "comment": "500 gram pack"
+        },
+        {
+            "name": "Sama / Mordhan",
+            "unit": "gram",
+            "price": ".16",
+            "brand": "Family mart",
+            "seller": "Family mart",
+            "comment": "500 gram pack"
+        },
+        {
+            "name": "All in one fariyali aata",
+            "unit": "gram",
+            "price": ".255",
+            "brand": "Home Made",
+            "seller": "Home made",
+            "comment": "150 gram mordhan + 35 gram sabudana + 100 gram rajgira + 75 gram singhada"
+        },
+        {
+            "name": "fariyali aata",
+            "unit": "gram",
+            "price": ".17",
+            "brand": "Home Made",
+            "seller": "Home Made",
+            "comment": "300 gram mordhan + 75 gram sabudana"
+        },
+        {
+            "name": "Elaichi powder",
+            "unit": "gram",
+            "price": "8.43",
+            "brand": "Keya seed powder",
+            "seller": "Big basket",
+            "comment": "https://www.bigbasket.com/pd/40029911/keya-powder-cardamom-seed-50-g/"
+        },
+        {
+            "name": "Saffron",
+            "unit": "milligram",
+            "price": ".35",
+            "brand": "Everest",
+            "seller": "Big Basket",
+            "comment": "small pack"
+        },
+        {
+            "name": "Cinnamon powder",
+            "unit": "gram",
+            "price": "3.18",
+            "brand": "Keya",
+            "seller": "Big Basket",
+            "comment": "50 gram plastic bottel"
+        },
+        {
+            "name": "Walnut",
+            "unit": "gram",
+            "price": "1.65",
+            "brand": "BB royal",
+            "seller": "Big Basket",
+            "comment": "100 gram pack, without shell"
+        },
+        {
+            "name": "Additional ingredient order charges",
             "unit": "standard",
             "price": "5",
             "brand": "-",
@@ -755,19 +821,27 @@ var itemDetails =
         },
         {
             "name": "shipping charges",
-            "unit": "product",
-            "price": "20",
+            "unit": "Standard",
+            "price": "5",
             "brand": "-",
             "seller": "-",
             "comment": "avarage calculation"
         },
         {
-            "name": "Elecricity and gas charges",
+            "name": "Elecricity",
             "unit": "half hour",
-            "price": "10",
+            "price": "8",
             "brand": "-",
             "seller": "-",
             "comment": "Avarage based on per unit charges in banglore and 1500 watt OTG"
+        },
+        {
+            "name": "Gas charges",
+            "unit": "half hour",
+            "price": "2",
+            "brand": "-",
+            "seller": "-",
+            "comment": "Avarage calculation based number"
         },
         {
             "name": "Cookie pizza packaging",
@@ -784,5 +858,21 @@ var itemDetails =
             "brand": "-",
             "seller": "-",
             "comment": "-"
+        },
+        {
+            "name": "Paper bag",
+            "unit": "noc",
+            "price": "15",
+            "brand": "-",
+            "seller": "-",
+            "comment": "-"
+        },
+        {
+            "name": "Reduction",
+            "unit": "standard",
+            "price": "-1",
+            "brand": "-",
+            "seller": "-",
+            "comment": "In case some ammount needs to be substituted"
         }
     ]
