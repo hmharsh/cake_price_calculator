@@ -617,7 +617,7 @@ var itemDetails =
             "price": "1.75",
             "brand": "Tea monk",
             "seller": "big-basket",
-            "comment": "50 gram pack"
+            "comment": "50 gram pack, (J24 50 gram in 50 rupees)"
         },
         {
             "name": "Saffron essence",
@@ -778,6 +778,70 @@ var itemDetails =
             "brand": "BB royal",
             "seller": "big-basket",
             "comment": "100 gram pack, without shell"
+        },
+        {
+            "name": "All spice powder",
+            "unit": "gram",
+            "price": "3",
+            "brand": "Bakers junction loose packaging",
+            "seller": "Bakers junction",
+            "comment": "15g pack of in 45₹"
+        },
+        {
+            "name": "Regular Sugar",
+            "unit": "gram",
+            "price": ".05",
+            "brand": "shoppers-city loose packaging",
+            "seller": "shoppers-city",
+            "comment": "1 KG"
+        },
+        {
+            "name": "Powder Sugar",
+            "unit": "gram",
+            "price": ".065",
+            "brand": "shoppers-city loose packaging",
+            "seller": "shoppers-city",
+            "comment": "Planned to grind at home as of now"
+        },
+        {
+            "name": "Fig / anjeer",
+            "unit": "gram",
+            "price": "2",
+            "brand": "dry fruit house",
+            "seller": "dry fruit house",
+            "comment": "100 gram pack"
+        },
+        {
+            "name": "powder brosn sugar",
+            "unit": "gram",
+            "price": ".12",
+            "brand": "Mawana",
+            "seller": "bake-wala",
+            "comment": "1kg pack"
+        },
+        {
+            "name": "Honey",
+            "unit": "gram",
+            "price": ".48",
+            "brand": "Dabar",
+            "seller": "big-basket",
+            "comment": "500 gram pack"
+        },
+        {
+            "name": "Corn flour",
+            "unit": "gram",
+            "price": ".066",
+            "brand": "Dabar",
+            "seller": "reliance / jio-mart",
+            "comment": "1 kg pack from reliance"
+        },
+        {
+            "name": "Pista slice",
+            "unit": "gram",
+            "price": "3",
+            "brand": "j24",
+            "seller": "j24",
+            "comment": "50 gram loose pack in 150 rupees"
         },
         {
             "name": "Additional ingredient order charges",
