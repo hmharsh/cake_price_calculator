@@ -190,7 +190,7 @@ var itemDetails =
             "price": ".365",
             "brand": "Nestle",
             "seller": "j24",
-            "comment": "230 gram tin"
+            "comment": "380 gram tin"
         },
         {
             "name": "Cream cheese",
