@@ -616,8 +616,8 @@ var itemDetails =
             "unit": "gram",
             "price": "1.75",
             "brand": "Tea monk",
-            "seller": "big-basket",
-            "comment": "50 gram pack, (J24 50 gram in 50 rupees)"
+            "seller": "big-basket/j24",
+            "comment": "50 gram pack, (j24 50 gram in 50 rupees)"
         },
         {
             "name": "Saffron essence",
