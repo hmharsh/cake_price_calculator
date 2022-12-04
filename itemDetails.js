@@ -177,12 +177,20 @@ var itemDetails =
             "comment": "100 gram pouch"
         },
         {
-            "name": "Condensed Milk / milk maid",
+            "name": "Methai mate",
             "unit": "gram",
             "price": ".29",
             "brand": "Amul",
             "seller": "jio-mart",
             "comment": "Amul methai mate 200 gram tin pack"
+        },
+        {
+            "name": "Condensed Milk",
+            "unit": "gram",
+            "price": ".365",
+            "brand": "Nestle",
+            "seller": "j24",
+            "comment": "230 gram tin"
         },
         {
             "name": "Cream cheese",
