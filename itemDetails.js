@@ -17,6 +17,14 @@ var itemDetails =
             "comment": "100 gram pack in 90 rupees"
         },
         {
+            "name": "butter scotch crush",
+            "unit": "ml",
+            "price": ".23",
+            "brand": "malas",
+            "seller": "bake-wala",
+            "comment": "750 ml in 175 rupees"
+        },
+        {
             "name": "Dates / pin Khajur",
             "unit": "gram",
             "price": ".13",
