@@ -9,6 +9,22 @@ var itemDetails =
             "comment": "Nutella Chocolate Hazelnut Spread, 350 gram in 350 rupees"
         },
         {
+            "name": "black graps",
+            "unit": "gram",
+            "price": "1",
+            "brand": "-",
+            "seller": "dry-fruit-house / shoppers-city",
+            "comment": "100 gram pack in 90 rupees"
+        },
+        {
+            "name": "Dates / pin Khajur",
+            "unit": "gram",
+            "price": ".13",
+            "brand": "-",
+            "seller": "Hidden dry fruit shop",
+            "comment": "Seedless, 1kg pack in 130 rupees"
+        },
+        {
             "name": "Maida",
             "unit": "gram",
             "price": ".06",
@@ -864,7 +880,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".84",
             "brand": "weissmill",
-            "seller": "Bakewala",
+            "seller": "bake-wala",
             "comment": "100 gram pack in 84"
         },
         {
@@ -872,7 +888,7 @@ var itemDetails =
             "unit": "gram",
             "price": ".5",
             "brand": "Prakriti naturals",
-            "seller": "Amazon",
+            "seller": "amazon",
             "comment": "900 gram pack in 300, look for better option locally"
         },
         {
