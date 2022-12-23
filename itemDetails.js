@@ -1,6 +1,14 @@
 var itemDetails =
     [
         {
+            "name": "Nutella",
+            "unit": "gram",
+            "price": "1",
+            "brand": "Nutella",
+            "seller": "amazon",
+            "comment": "Nutella Chocolate Hazelnut Spread, 350 gram in 350 rupees"
+        },
+        {
             "name": "Maida",
             "unit": "gram",
             "price": ".06",
