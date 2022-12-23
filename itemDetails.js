@@ -321,7 +321,7 @@ var itemDetails =
             "comment": "100 gram pouch with 65 MRP"
         },
         {
-            "name": "Duel choco chips",
+            "name": "Dual choco chips",
             "unit": "gram",
             "price": ".85",
             "brand": "Ask foods",
@@ -858,6 +858,14 @@ var itemDetails =
             "brand": "weissmill",
             "seller": "Bakewala",
             "comment": "100 gram pack in 84"
+        },
+        {
+            "name": "Stone chocolates",
+            "unit": "gram",
+            "price": ".5",
+            "brand": "Prakriti naturals",
+            "seller": "Amazon",
+            "comment": "900 gram pack in 300, look for better option locally"
         },
         {
             "name": "Additional ingredient order charges",
