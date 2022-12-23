@@ -852,6 +852,14 @@ var itemDetails =
             "comment": "50 gram loose pack in 150 rupees"
         },
         {
+            "name": "Butter scotch crunch",
+            "unit": "gram",
+            "price": ".84",
+            "brand": "weissmill",
+            "seller": "Bakewala",
+            "comment": "100 gram pack in 84"
+        },
+        {
             "name": "Additional ingredient order charges",
             "unit": "standard",
             "price": "5",
