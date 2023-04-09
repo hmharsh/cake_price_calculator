@@ -900,6 +900,62 @@ var itemDetails =
             "comment": "900 gram pack in 300, look for better option locally"
         },
         {
+            "name": "Rum",
+            "unit": "ml",
+            "price": ".7",
+            "brand": "old monk",
+            "seller": "Daaru ki dukaan",
+            "comment": "Gold reserve delux premium old monk"
+        },
+        {
+            "name": "Dark couverture",
+            "unit": "gram",
+            "price": ".55",
+            "brand": "2M",
+            "seller": "bake-wala",
+            "comment": "500 gram pack"
+        },
+        {
+            "name": "Milk couverture",
+            "unit": "gram",
+            "price": ".6",
+            "brand": "van houtan",
+            "seller": "Bakers Junction",
+            "comment": "1 kg pack of van houtan"
+        },
+        {
+            "name": "White couverture",
+            "unit": "gram",
+            "price": ".65",
+            "brand": "van houtan",
+            "seller": "bake-wala",
+            "comment": "1 kg pack of van houtan"
+        },
+        {
+            "name": "Chilli flakes",
+            "unit": "gram",
+            "price": "1.8",
+            "brand": "Keya",
+            "seller": "big-basket/j24",
+            "comment": "40 gram pack"
+        },
+        {
+            "name": "Icing sugar",
+            "unit": "gram",
+            "price": ".112",
+            "brand": "Mawana",
+            "seller": "bake-wala, Bakers Junction",
+            "comment": "1 kg pack"
+        },
+        {
+            "name": "Rice crisp",
+            "unit": "gram",
+            "price": ".15",
+            "brand": "",
+            "seller": "amazon",
+            "comment": "Amazon 100 gram pack of 200 rupees, also available on bakewala"
+        },
+        {
             "name": "Additional ingredient order charges",
             "unit": "standard",
             "price": "5",
